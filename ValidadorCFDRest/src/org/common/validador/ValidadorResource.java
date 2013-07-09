@@ -1,16 +1,11 @@
 package org.common.validador;
 
-import java.io.IOException;
-
-import org.apache.catalina.tribes.group.interceptors.DomainFilterInterceptor;
 import org.restlet.ext.xml.DomRepresentation;
-import org.restlet.ext.xml.XmlRepresentation;
 import org.restlet.representation.Representation;
 import org.restlet.resource.Post;
 import org.restlet.resource.ServerResource;
 import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.context.annotation.Scope;
-import org.springframework.oxm.Marshaller;
 import org.springframework.stereotype.Component;
 import org.w3c.dom.Attr;
 import org.w3c.dom.CDATASection;
