@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+<bean id="validadorXSD" class="org.common.services.impl.ValidateSchemaAppServiceImpl" />
+
+<bean id="validadorXML" class="org.common.services.ws.impl.ValidadorCFDImpl" lazy-init="default">
+	<property name="validacionesCFD" ref="validacionesCFD"/>
+</bean>
+
+<bean id="validacionesCFD" class="org.common.services.impl.ValidaCFDUtilImpl">
+ 	<property name="cfddao" ref="foliosDAOTarget"/>
+ 	<property name="validaXSD" ref="validadorXSD"/>
+</bean>
+
+
+
+</beans>

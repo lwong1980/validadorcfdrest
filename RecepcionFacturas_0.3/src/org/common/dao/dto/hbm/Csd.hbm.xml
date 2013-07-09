@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="org.common.dao.dto.Csd" table="csd">
+		<id column="idcsd" name="idCsd" type="java.lang.Long">
+			<generator class="identity"/>
+		</id>
+		<property column="rfc" name="rfc" type="java.lang.String" />
+		<property column="noserie" name="noSerie" type="java.lang.String" />
+		<property column="edocert" name="edoCert" type="java.lang.String" />
+		<property column="fecini" name="fechaini" type="java.sql.Timestamp" />
+		<property column="fecfin"  name="fechafin" type="java.sql.Timestamp" />
+	</class>
+</hibernate-mapping>

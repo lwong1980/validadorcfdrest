@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="org.common.dao.dto.FoliosCFD" table="folioscfd">
+		<id column="idfolio" name="idFolio" type="java.lang.Integer">
+			<generator class="identity"/>
+		</id>
+		<property column="rfc" name="rfc" type="java.lang.String" />
+		<property column="noprobacion" name="noAprobacion" type="java.lang.Integer" />
+		<property column="anoaprobacion" name="anoAprobacion" type="java.lang.Integer" />
+		<property column="serie" name="serie" type="java.lang.String" />
+		<property column="folioini" name="folioini" type="java.lang.Integer" />
+		<property column="foliofin"  name="foliofin" type="java.lang.Integer" />
+	</class>
+</hibernate-mapping>
