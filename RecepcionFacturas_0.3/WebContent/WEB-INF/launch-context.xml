@@ -20,7 +20,7 @@
 
 <!-- 	<import resource="classpath:/META-INF/spring/ftp.xml" /> -->
      	<import resource="classpath:org/common/spring/beans/beans.xml" />  
-	 	<import resource="classpath:org/common/spring/beans/hibernate.xml" /> 
+ 	 	<import resource="classpath:org/common/spring/beans/hibernate.xml" />  
 		<import resource="classpath:org/common/spring/beans/ws.xml" />
 
 

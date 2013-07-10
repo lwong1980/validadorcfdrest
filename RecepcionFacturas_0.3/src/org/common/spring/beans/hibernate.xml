@@ -11,9 +11,9 @@
 
 	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
-		<property name="url" value="jdbc:mysql://192.168.1.72:3306/recpxml" />
+		<property name="url" value="jdbc:mysql://lwong.db.5256397.hostedresource.com:3306/recpxml" />
 		<property name="username" value="lwong" />
-		<property name="password" value="luis1234" />
+		<property name="password" value="Lwong198@" />
 	</bean>
 
 
